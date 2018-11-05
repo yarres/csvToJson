@@ -54,8 +54,6 @@ func main() {
 
 		data = append(data, datum)
 	}
-	fmt.Print("DATA")
-	fmt.Println(data)
 
 	// Convert to JSON
 	jsonData, jsonErr := json.Marshal(data)
@@ -63,8 +61,6 @@ func main() {
 		fmt.Println(jsonErr)
 		os.Exit(1) // Exit with an error code
 	}
-
-	fmt.Print("JSON DATA")
 
 	fmt.Println(string(jsonData))
 
